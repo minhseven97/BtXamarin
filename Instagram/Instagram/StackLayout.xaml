@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Instagram.StackLayout">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Padding="10">
+                <Label Text="Ahn_Hani_92"></Label>
+            </StackLayout>
+            <Image Source="https://vfan-phinf.pstatic.net/20191106_112/1572972804249tfSB2_JPEG/hani.jpg?type=e1280"/>
+            <StackLayout Orientation="Horizontal" Spacing="10" Padding="10,0">
+                <Button Text="Like" BackgroundColor="White" TextColor="Blue"></Button>
+                <Button Text="Comment" BackgroundColor="White" TextColor="Blue"></Button>
+                <Button Text="Share" BackgroundColor="White" TextColor="Blue"></Button>
+            </StackLayout>
+            <StackLayout Padding="10">
+                <BoxView HeightRequest="1" Color="#f0f0f0"></BoxView>
+                <Label Text="777 like" FontAttributes="Bold"></Label>
+                <Label Text="21/2/2020 ..." TextColor="Black"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

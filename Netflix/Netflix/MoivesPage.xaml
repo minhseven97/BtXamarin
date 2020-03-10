@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Netflix.MoivesPage">
+    <StackLayout >
+        <SearchBar TextChanged="OnTextChanged" Placeholder="Search by actor..."></SearchBar>
+        <Frame x:Name="notFound" Padding="20" HasShadow="false" IsVisible="false">
+            <Label Text="No movies found matching your search." TextColor="Gray"></Label>
+        </Frame>
+        <ListView x:Name="moviesListView" ItemSelected="OnMovieSelected" IsVisible="False">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell 
+						ImageSource="{Binding Poster}"
+						Text="{Binding Title}" Detail="{Binding ReleaseYear}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
